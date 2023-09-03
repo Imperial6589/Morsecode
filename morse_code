@@ -1,0 +1,37 @@
+def convert_message_to_morse(message):
+  # Create a dictionary that maps each letter to its Morse code equivalent
+  morse_code_dict = {
+    "a": ".-",
+    "b": "-...",
+    "c": "-.-.",
+    "d": "-..",
+    "e": ".",
+    "f": "..-.",
+    "g": "--.",
+    "h": "....",
+    "i": "..",
+    "j": ".---",
+    "k": "-.-",
+    "l": ".-..",
+    "m": "--",
+    "n": "---",
+    "o": "---",
+    "p": ".--.",
+    "q": "--.-",
+    "r": ".-.",
+    "s": "...",
+    "t": "-",
+    "u": "..-",
+    "v": "...-",
+    "w": ".--",
+    "x": "-..-",
+    "y": "-.--",
+    "z": "--..",
+  }
+
+  # Convert the message to Morse code
+  morse_code = ""
+  for letter in message:
+    morse_code += morse_code_dict[letter]
+
+  return morse_code
