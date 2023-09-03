@@ -1,0 +1,14 @@
+<html>
+<head>
+  <title>Morse Code Converter</title>
+</head>
+<body>
+  <h1>Morse Code Converter</h1>
+  <form action="/" method="get">
+    <input type="text" name="message" placeholder="Enter your message">
+    <input type="submit" value="Convert">
+  </form>
+  <p>The Morse code equivalent of your message is:</p>
+  <p id="morse-code"></p>
+</body>
+</html>
