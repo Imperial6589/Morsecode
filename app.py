@@ -41,11 +41,11 @@ def morse_to_alphabet(morse_code):
 
 def alphabet_to_morse(alphabet_text):
     morse_code = ''
-    for char in alphabet_text:
+    for char in alphabet_text.upper():
         if char == ' ':
             morse_code += ' '
-        elif char.upper() in morse_code_dict:
-            morse_code += morse_code_dict[char.upper()] + ' '
+        elif char in morse_code_dict:
+            morse_code += morse_code_dict[char] + ' '
         else:
             morse_code += '? '
     return morse_code.strip()
@@ -62,3 +62,7 @@ elif conversion_choice == 'Morse Code to Message':
     user_input = st.text_input("Enter Morse code (use '.' for dot and '-' for dash, separate letters with spaces):")
     result = morse_to_alphabet(user_input)
     st.write(f"Converted to alphabet: {result}")
+
+
+
+
